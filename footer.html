@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    footer{
+        background-color: #D9D9D9;
+        padding: 0 20px 10px 20px;
+    }
+    .part1{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    .part1 .social-icons{
+        margin-top: 40px;
+    }
+    .part1 .social-icons img{
+        margin-left: 20px;
+    }
+    .part2{
+        background-color: #BFA6D4;
+        padding: 30px;
+    }
+    .part2 .contact{
+        text-align: center;
+        background-color: #844CA7;
+        border-radius: 15px;
+        padding: 10px 10px;
+        color: white;
+    }
+    .part2 .contact input, .part2 .contact textarea{
+        width: 70%;
+        color: black;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+    }
+    .part2 .contact button{
+        width: 60%;
+        color: #844CA7;
+        background-color: white;
+        border-radius: 30px;
+        padding: 5px 10px;
+        box-shadow: 1px 1px 10px #BFA6D4;
+        border: none;
+        font-weight: bold;
+    }
+    .part3 h5{
+        float: right;
+        margin-top: 5px;
+    }
+    a{
+        color: #844CA7;
+        font-weight: bold;
+    }
+</style>
+<body>
+
+    <footer>
+        <div class="row">
+            <div class="col part1">
+                <div class="logo">
+              
+                    <img src="images/logo/2564084.png" alt="Votre Logo" width="150px" height="auto">
+                </div>
+               
+                <div class="social-icons">
+                  <img class="social-icon" src="images/icons/réseaux sociaux/facebook.png" width="35px">
+                  <img class="social-icon" src="images/icons/réseaux sociaux/whatsapp.png" width="40px">
+                  <img class="social-icon" src="images/icons/réseaux sociaux/instagram-icon.png" width="45px">
+                  <img class="social-icon" src="images/icons/réseaux sociaux/twitter.png" width="30px">
+                  <img class="social-icon" src="images/icons/réseaux sociaux/youtube.png" width="35px">
+              </div>
+            </div>
+        </div>
+        <div class="row part2">
+            <div class="col">
+                <h2 class="title"> fitness guid</h2>
+                <p class="para">Le client lui-même est une grande élite <br>consecteur adipisicing. La vie, ne te <br>méprends pas sur le plaisir du corps,</p>
+            </div>
+            <div class="col">
+                <h2> Quelques liens</h2>
+                <a href="">F.A.Q</a><br>
+                <a href="">Politique de cookies</a><br>
+                <a href="">Conditions d'utilisation</a><br>
+                <a href="">Soutien</a>
+            </div>
+            <div class="col contact">
+                <form>
+                    <h2>Contactez-nous</h2>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea rows="3" cols="23" >Votre message</textarea><br>
+                    <button type="submit">Envoyez</button>
+                </form>
+            </div>
+        </div>
+        <div class="row part3">
+            <div class="col">
+                <h5>copyright @2023 <a href="">Fitness Guide</a></h5>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

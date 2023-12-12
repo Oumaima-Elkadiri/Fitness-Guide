@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Fitness Guide</title>
+</head>
+<style>
+  .navbar{
+      display: none;
+  }
+  .logo{
+      width: 150px;
+      margin-left: 50px;
+      margin-top: -5px;
+      transition: 0.3s;
+  }
+  .nav{
+      width: 100%;
+      z-index: 999999999;
+      display: flex;
+      margin-top: -20px;
+      justify-content: space-between;
+  }
+  ul{
+      display: flex;
+      padding: 40px 50px 0 0;
+  }
+  ul li{
+      list-style: none;
+      margin-left: 50px;
+  }
+  .design a{
+      color: black;  
+      text-decoration: none;
+      text-shadow: 2px 2px 8px grey;
+      transform: scale(1);
+  }
+  .design a::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #5a7eee;
+      transition: width .3s;
+  }
+  .design a:hover::after{
+      width: 100%;
+  }
+  .design a:hover{
+      color: #5a7eee;
+      transform: scale(2);
+      transition: .3s;
+      text-decoration: none;
+  }
+  @media screen and (max-width: 1200px) {
+      .nav{
+          display: none;
+      }
+      .navbar{
+          display: flex;
+          position: absolute;
+      }
+      .navbar .design a{
+          color: black;
+      }
+      .navbar .design a:hover{
+          transform: none;
+          color: #5a7eee;
+      }
+      .navbar-toggler{
+          position: absolute;
+          top: 20px;
+          right: 50px;
+          color: #5a7eee;
+      }
+      .compte{
+          display: flex;
+      }
+      .compte a{
+          margin-right: 30px;
+      }
+      .navbar .logo{
+      width: 120px;
+      margin-top: -20px;
+    }
+  }  
+  @media screen and (max-width: 950px) {
+    .navbar .logo{
+      width: 80px;
+      margin-left: 10px;
+      margin-top: -20px;
+    }
+    .navbar span, .navbar button{
+      font-size: 15px;
+    }
+    .navbar-toggler{
+      
+      margin-top: -10px;
+    }
+  } 
+  @media screen and (max-width: 600px) {
+    .navbar .logo{
+      width: 60px;
+      margin-left: 5px;
+      margin-top: -15px;
+    }
+    .navbar span, .navbar button{
+      font-size: 10px;
+    }
+    .navbar-toggler{
+      
+      margin-top: -10px;
+    }
+
+  }
+  
+  </style>
+<body>
+    <header id="home">
+        <nav class="nav">
+          <img class="logo" src="images/logo/2564084.png" alt="Fitness Guide">
+          <ul>
+              <li class="design"><a href="#acceuil">Acceuil</a></li>
+              <li class="design"><a href="#services">Services</a></li>
+              <li class="design"><a href="#propos">À Propos</a></li>
+              <li class="design"><a href="#blog">Blog</a></li>
+              <li class="design"><a href="#contact">Contact</a></li>
+              <li><a href="compte/se connecter.html" onclick="window.open(this.href);return false"><img width="30px" src="images/icons/login1.png"></a></li>
+              <li><a href="compte/inscription.html" onclick="window.open(this.href);return false"><img width="40px" src="images/icons/sign1.png"></a></li>
+          </ul>
+      </nav>
+      <nav class="navbar fixed-top">
+          <div class="container-fluid">
+            <img class="logo" src="images/logo/2564084.png" alt="Fitness Guide">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img class="logo" src="images/logo/2564084.png" alt="Fitness Guide">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  
+                  <li class="nav-item design">
+                    <a class="nav-link selection" href="#acceuil">Acceuil</a>
+                  </li>
+                  <li class="nav-item design">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item design">
+                    <a class="nav-link" href="#propos">À Propos</a>
+                  </li>
+                  <li class="nav-item design">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item design">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  <li class="nav-item compte">
+                      <a class="nav-link" href="compte/se connecter.html" target="_blank"><img width="30px" src="images/icons/login1.png" alt="connexion"></a>
+                      <a class="nav-link" href="compte/inscription.html" target="_blank"><img width="40px" src="images/icons/sign1.png" alt="inscription"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div  style="width:100%; position: absolute; top: 0; left: 0;" id="carouselExampleFade acceuil" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slides/1.png" class="d-block w-400" alt="slides_1">
+              <h1>La santé est<pre>la beauté et</pre>Fitnes en est la clé</h1>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/slides/5.png" class="d-block w-450" alt="slides_2">
+              <h1>Gagnez <pre>la journée,</pre> Chaque jour</h1>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/slides/2.png" class="d-block w-580" alt="slides_3">
+              <h1>Construire<pre>un mieux</pre> Corps</h1> 
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <div id="services">
+      <div class="presentation">
+        <h1>Améliorez votre parcours de remise en forme avec nos services premium</h1>
+        <p>Découvrez une gamme de services de remise en forme sur mesure conçue pour répondre à vos objectifs uniques.</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card" >
+            <img src="images/services/program.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3><a href="programme/Program.html">LE PROGRAMME DE FITNESS</a></h3>
+            </div>
+          </dvscode-file://vscode-app/c:/Users/admin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmliv>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="images/services/nutrition.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3><a href="nutrition/nourriture.html">GUIDES NUTRITIONNELS</a></h3>
+            </div>
+          </dvscode-file://vscode-app/c:/Users/admin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmliv>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="images/services/clothes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3><a href="boutique/fitness.html">VÊTEMENTS ET ACCESSOIRES</a></h3>
+            </div>
+          </dvscode-file://vscode-app/c:/Users/admin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmliv>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="images/services/after.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3><a href="routine/projet.html">APRÈS UN ENTRAÎNEMENT</a></h3>
+            </div>
+          </dvscode-file://vscode-app/c:/Users/admin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmliv>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="propos">
+        <img class="left" src="images/photo.png">
+        <div class="container">
+            <h1>A Propos</h1>
+            <h3>la meilleure fitness</h3>
+            <P>La quête de la meilleure expérience en matière de fitness englobe bien plus que des équipements de pointe et des installations de qualité. La meilleure expérience de fitness se caractérise par un environnement accueillant et motivant, des professionnels qualifiés, et une variété d'activités adaptées à différents niveaux de forme physique. Les meilleurs centres de fitness ne se contentent pas seulement de fournir des équipements de pointe, mais ils créent également une communauté engageante qui encourage la collaboration et le soutien mutuel entre les membres.</P>
+            <div class="latifa">
+                <div class="A">
+                    <img src="images/icons/réseaux sociaux/facebook.png">
+                </div>
+                <div class="B">
+                    <img src="images/icons/réseaux sociaux/whatsapp.png">
+                </div>
+                <div class="C">
+                    <img src="images/icons/réseaux sociaux/instagram-icon.png">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="blog">
+      
+    <h1>L'équipe d'experts</h1>
+    <div class="card mb-3" >
+            <div class="row g-0"style="max-width: 90%">
+              <div class="col-md-7">
+                <img src="images/avant2.jpg" class="img-fluid rounded-start" width="80%" height="30%">
+              </div>
+              <div class="col-md-5"> 
+                <div class="card-body">
+                    <img src="images/profil1.jpg" width="20%" height="20%"class="card-title">Stephanie_Buttermore</h2>
+                    <h6>Modifié•172sem</h6>
+                  <p>180 de différence de mentalité🤍 Nous racontons généralement que Fitness Guide est le principal antagoniste de notre image corporelle, mais je pense que c'est bien plus que cela. La pression d'avoir l'air d'un certain la manière est également SUPER interne malgré tous les facteurs externes.Avant en faisant tapis, j'étais responsable de beaucoup de mes tendances physiques et puis quand j'ai atteint un objectif arbitraire. Je continuerais simplement à trier un autre problème (comme « maintenant je suis trop maigre » 😞). C'est un projet d'amélioration personnelle sur lequel je dois travailler tous les jours, mais je suis déjà arrivé jusqu'ici et j'espère continuer à m'améliorer encore.
+                    Je dois continuer à me rappeler que je suis suffisant et à m'accepter comme je suis 🙏 .. Merci Beaucoup Fitness Guide!! Z</p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0"style="max-width: 90%;">
+                  <div class="col-md-7">
+                    <img src="images/avant1.jpg" class="img-fluid rounded-start" width="100%" height="10%">
+                  </div>
+                  <div class="col-md-5"> 
+                    <div class="card-body">
+                        <img src="images/profil2.jpg" width="14%" height="30%"class="card-title">Stephanie_Buttermore</h2>
+                        <h6>Modifié•172sem</h6>
+                      <p>Salut 👋🏽 je m'appelle Mari et je suis fier de croire à nouveau en moi <3 Chaque kilo perdu a été un pas vers ma propre renaissance. Cette transformation va bien au-delà de la perte de poids.C'est une redécouverte de moi-même, une réaffirmation de ma force intérieure. Chaque petit effort a conduit à des changements étonnants, 
+                        tant physiques que mentaux. Je me sens plus légère, plus énergique, et surtout, plus confiante. Ce voyage m'a appris que je suis capable de bien plus que je ne l'aurais imaginé. 
+                        La meilleure partie de cette transformation est le sourire que je porte désormais, non seulement pour le monde, mais pour moi-même. C'est une histoire de résilience, d'amour-propre retrouvé et de bien-être. 
+                        Voilà ma transformation, un voyage qui continue de m'inspirer chaque jour.
+                        Merci à Fitness Guide. Je vous aime tous<3</p>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    <footer id="contact">
+      <div class="row">
+          <div class="col part1">
+              <div class="logo">
+            
+                  <img src="images/logo/2564084.png" alt="Votre Logo" width="150px" height="auto">
+              </div>
+             
+              <div class="social-icons">
+                <img class="social-icon" src="images/icons/réseaux sociaux/facebook.png" width="35px">
+                <img class="social-icon" src="images/icons/réseaux sociaux/whatsapp.png" width="40px">
+                <img class="social-icon" src="images/icons/réseaux sociaux/instagram-icon.png" width="45px">
+                <img class="social-icon" src="images/icons/réseaux sociaux/twitter.png" width="30px">
+                <img class="social-icon" src="images/icons/réseaux sociaux/youtube.png" width="35px">
+            </div>
+          </div>
+      </div>
+      <div class="row part2">
+          <div class="col">
+              <h2 class="title"> fitness guid</h2>
+              <p class="para">Le client lui-même est une grande élite <br>consecteur adipisicing. La vie, ne te <br>méprends pas sur le plaisir du corps,</p>
+          </div>
+          <div class="col">
+              <h2> Quelques liens</h2>
+              <a href="">F.A.Q</a><br>
+              <a href="">Politique de cookies</a><br>
+              <a href="">Conditions d'utilisation</a><br>
+              <a href="">Soutien</a>
+          </div>
+          <div class="col contact">
+              <form>
+                  <h2>Contactez-nous</h2>
+                  <input type="email" placeholder="Email"><br>
+                  <textarea rows="3" cols="23" >Votre message</textarea><br>
+                  <button type="submit">Envoyez</button>
+              </form>
+          </div>
+      </div>
+      <div class="row part3">
+          <div class="col">
+              <h5>copyright @2023 <a href="">Fitness Guide</a></h5>
+          </div>
+      </div>
+  </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

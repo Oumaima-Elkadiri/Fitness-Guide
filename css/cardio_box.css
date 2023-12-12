@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    font-family:'Myriad Pro','Berlin Sans FB','Century Schoolbook';
+    background-color: #F8F8F8;
+}
+header{
+    background: url("../images/programme/slide/cardio_box.jpg") no-repeat;
+    width: 100%;
+    background-size: 100%;
+    min-height: 130vh;
+    position: relative;
+}
+header .message{
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 10%;
+    width: 80%;
+}
+@keyframes colorChange {
+    0% { color: white; }
+    33% { color: #8050AE; }
+    70% { color: #5a7eee; }
+    100% { color: white; }
+}
+
+.animated-text {
+    animation: colorChange 3s infinite;
+}
+.avant{
+    text-align: center;
+    margin: 30px 40px;
+    font-size: 26px;
+} 
+@media screen and (max-width: 1200px) {
+    header{
+        min-height: 90vh;
+    }
+    header .message{
+        top: 280px;
+    }
+    .animated-text {
+        font-size: 30px;
+    }
+    .avant{
+        font-size: 25px;
+    } 
+}
+@media screen and (max-width: 850px) {
+    header{
+        min-height: 72vh;
+    }
+    header .message{
+        top: 200px;
+    }
+    .animated-text {
+        font-size: 27px;
+    }
+    .avant{
+        font-size: 23px;
+    } 
+}
+@media screen and (max-width: 600px) {
+
+    header{
+        min-height: 58vh;
+    }
+    
+    header .message{
+        top: 150px;
+    }
+    .animated-text {
+        font-size: 25px;
+    }
+    .avant{
+        font-size: 20px;
+    } 
+}

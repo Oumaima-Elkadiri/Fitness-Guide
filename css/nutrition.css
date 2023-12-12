@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-size: 23px;
+    font-family:'Myriad Pro','Berlin Sans FB','Century Schoolbook';
+    background-color: #F8F8F8;
+}
+header {
+    background: url(../images/nutrition/healty.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+  }
+@media screen and (max-width: 1200px) {
+    .contact .contact form .footer{
+        flex-wrap: wrap;
+
+    }
+
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 150px 0;
+    text-align: center;
+  }
+
+.h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color:#8050AE ;
+  }
+
+  .para1{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+
+.center{
+    text-align: center;
+    color:#8050AE;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    font-family:'Myriad Pro','Berlin Sans FB','Century Schoolbook';
+    background-color: #F8F8F8;
+}
+header{
+    background: url("../images/programme/slide/danse.jpg") no-repeat;
+    width: 100%;
+    background-size: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+header .message{
+    text-align: center;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 280px;
+    left: 15%;
+    width: 70%;
+}
+.message h2{
+    font-size: 35px;
+    animation: slidein 4s;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.message p{
+    font-size: 25px;
+    animation: slideinp 7s;
+}
+@keyframes slideinp{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    header{
+        min-height: 87vh;
+    }
+    header .message{
+        top: 150px;
+        left: 5%;
+        width: 90%;
+    }
+    .message h2{
+        font-size: 29px;
+    }
+    .message p{
+        font-size: 22px;
+    } 
+}
+@media screen and (max-width: 850px) {
+    header{
+        min-height: 62vh;
+    }
+    header .message{
+        top: 140px;
+        left: 5%;
+        width: 90%;
+    }
+    .message h2{
+        font-size: 20px;
+    }
+    .message p{
+        font-size: 15px;
+    } 
+}
+@media screen and (max-width: 600px) {
+
+    header{
+        min-height: 50vh;
+    }
+    header .message{
+        top: 100px;
+        left: 2.5%;
+        width: 95%;
+    }
+    .message h2{
+        font-size: 16px;
+    }
+    .message p{
+        font-size: 10px;
+    }
+}

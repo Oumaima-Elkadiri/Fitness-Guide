@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gym.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJhuvL9Zq4Hm+8x4U+8U5q6vZvbWu6Dd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512...">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-e2nJSNyoExJk4Nlz/xr+YKpByH3Etym2a98Iy+Coo4LteMxtm6IvZk9v3EAgbOjr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-e2nJSNyoExJk4Nlz/xr+YKpByH3Etym2a98Iy+Coo4LteMxtm6IvZk9v3EAgbOjr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyC8/3L4R8/7Y5dMOyzsz0m1p2Px19GgjD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Fitness Guide</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <img class="logo" src="../images/logo/2564084.png" alt="Fitness Guide">
+            <ul>
+                <li class="icon"><a href="../index.html"><img width="40px" src="../images/icons/Home.png" alt="Acceuil"></a></li>
+                <li><a class="selection" href="Program.html">Programme</a></li>
+                <li><a href="">Nutrition</a></li>
+                <li><a class="selection" href="">Boutique</a></li>
+                <li><a href="">Routine</a></li>
+                <li class="icon"><a href="../compte/se connecter.html" onclick="window.open(this.href);return false"><img width="20px" src="../images/icons/login.png" alt="connexion"></a></li>
+                <li class="icon"><a href="../compte/inscription.html" onclick="window.open(this.href);return false"><img width="30px" src="../images/icons/sign_up1.png" alt="inscription"></a></li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <img class="logo" src="../images/logo/2564084.png" alt="Fitness Guide">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img class="logo" src="../images/logo/2564084.png" alt="Fitness Guide">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    
+                    <li class="nav-item icon">
+                        <a class="nav-link" href="../index.html"><img width="40px" src="../images/icons/Home.png" alt="Acceuil"></a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Program.html">Programme</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link selection" href="#">Boutique</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Routine</a>
+                    </li>
+                    <li class="nav-item-icon icon">
+                        <a class="nav-link" href="../compte/se connecter.html" onclick="window.open(this.href);return false"><img width="20px" src="../images/icons/login.png" alt="connexion"></a>
+                        <a class="nav-link" href="../compte/inscription.html" onclick="window.open(this.href);return false"><img width="30px" src="../images/icons/sign_up1.png" alt="inscription"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url(../images/boutique/bi.jpg);">
+                <div class="slide-content">
+                    <h2>Offres spéciales</h2>
+                    <p>Découvrez nos nouveaux produits</p>
+                    <a href="user.html" class="shop-now-btn">Acheter maintenant</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('../images/boutique/WhatsApp\ Image\ 2023-12-12\ at\ 08.52.04.jpeg">
+                <div class="slide-content">
+                    <h2>Promotions exclusives</h2>
+                    <p>Économisez sur vos achats préférés</p>
+                    <a href="user.html" class="shop-now-btn">Acheter maintenant</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('../images/boutique/SLIDER.jpg');">
+                <div class="slide-content">
+                    <h2>Nouvelle collection</h2>
+                    <p>Explorez nos derniers articles à la mode</p>
+                    <a href="user.html" class="shop-now-btn">Acheter maintenant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <h1>Bienvenue sur Votre Site E-commerce</h1>
+        <p>Découvrez notre sélection de produits de qualité à des prix exceptionnels.</p>
+    </header>
+
+<!-- categories-->
+<div class="categories-container" style="background-color: #dac6e6;"                >
+    <div class="category" style="background-color: #dac6e6; ">
+      <img src="../images/boutique/sac2.jpg" alt="Category 1">
+      
+    </div>
+
+    <div class="category" style="background-color:#dac6e6; " >
+      <img src="../images/boutique/move.jpg" alt="Category 2">
+      
+    </div>
+
+    <div class="category" style="background-color: #dac6e6; "             >
+      <img src="../images/boutique/shoes.jpg" alt="Category 3">
+     
+    </div>
+  </div>
+  <h1>Nos Produits</h1>
+  <div class="conteneur">
+    <figure>
+        <img src="../images/boutique/art.PNG" width="220px">
+        <figcaption>Collants D'entraînement</figcaption>
+        <div class="etoiles">
+            <a href="#" class="etoile">&#9733;</a>
+            <a href="#" class="etoile">&#9733;</a>
+            <a href="#" class="etoile">&#9733;</a>
+            <a href="#" class="etoile">&#9734;</a>
+        </div>
+        <p>17Odh</p>
+        <a href="shop.html" class="shop-now-btn">Acheter maintenant</a>
+    </figure>
+<div class="conteneur">
+        <figure>
+            <img src="../images/boutique/sheiiin.PNG" width="220px">
+            <figcaption>VUTRU Veste De Sport Femme</figcaption>
+            <div class="etoiles">
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+            </div>
+            <p>12Odh</p>
+            <a href="shop1.html" class="shop-now-btn">Acheter maintenant</a>
+        </figure>
+   
+        <figure>
+            <img src="../images/boutique/spaderie.jpeg" width="220px">
+            <figcaption>Femme Chaussures de course</figcaption>
+            <div class="etoiles">
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9734;</a>
+            </div>
+            <p>1200dh</p>
+            <a href="shop2.html" class="shop-now-btn">Acheter maintenant</a>
+        </figure>
+    </div>
+    
+        <figure>
+            <img src="../images/boutique/c.PNG" width="220px">
+            <figcaption>Tapis De Yoga yoga fitness </figcaption>
+            <div class="etoiles">
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9734;</a>
+                <a href="#" class="etoile">&#9734;</a>
+                <a href="#" class="etoile">&#9734;</a>
+            </div>
+            <p>300dh</p>
+            <a href="shop3.html" class="shop-now-btn">Acheter maintenant</a>
+        </figure>
+    </div>
+</div>
+
+<h1>collection</h1>
+<div class="conteneur">
+  <figure>
+      <img src="../images/boutique/outfit1-removebg-preview (1).png" width="220px">
+      <figcaption>Ensemble De Sport Femme</figcaption>
+      <div class="etoiles">
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9734;</a>
+      </div>
+      <p>17Odh</p>
+      <a href="#" class="shop-now-btn">Acheter maintenant</a>
+  </figure>
+<div class="conteneur">
+      <figure>
+          <img src="../images/boutique/outfit2-removebg-preview.png" width="220px">
+          <figcaption>VUTRU Veste De Sport Femme</figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+          </div>
+          <p>12Odh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+ 
+      <figure>
+          <img src="../images/boutique/outfit3-removebg-preview.png" width="220px">
+          <figcaption>Ensemble De Femme sportif</figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9734;</a>
+          </div>
+          <p>1200dh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+  </div>
+  
+      <figure>
+          <img src="../images/boutique/outfit4-removebg-preview.png" width="220px">
+          <figcaption>Ensemble De Sport Femme</figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9734;</a>
+              <a href="#" class="etoile">&#9734;</a>
+              <a href="#" class="etoile">&#9734;</a>
+          </div>
+          <p>300dh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+  </div>
+</div>
+<div class="conteneur">
+  <figure>
+      <img src="../images/boutique/tapiis-removebg-preview.png" width="220px">
+      <figcaption>Tapis De Yoga yoga fitness</figcaption>
+      <div class="etoiles">
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9733;</a>
+          <a href="#" class="etoile">&#9734;</a>
+      </div>
+      <p>17Odh</p>
+      <a href="#" class="shop-now-btn">Acheter maintenant</a>
+  </figure>
+<div class="conteneur">
+      <figure>
+          <img src="../images/boutique/ha-removebg-preview.png "  width="220px">
+          <figcaption>VUTRU Veste De Sport Femme</figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+          </div>
+          <p>12Odh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+ 
+      <figure>
+          <img src="../images/boutique/box-removebg-preview.png" width="220px">
+          <figcaption> box Femme de course sport</figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9734;</a>
+          </div>
+          <p>1200dh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+  </div>
+  
+      <figure>
+          <img src="../images/boutique/rose-removebg-preview.png" width="220px">
+          <figcaption>Tapis De Yoga yoga fitness </figcaption>
+          <div class="etoiles">
+              <a href="#" class="etoile">&#9733;</a>
+              <a href="#" class="etoile">&#9734;</a>
+              <a href="#" class="etoile">&#9734;</a>
+              <a href="#" class="etoile">&#9734;</a>
+          </div>
+          <p>300dh</p>
+          <a href="#" class="shop-now-btn">Acheter maintenant</a>
+      </figure>
+  </div>
+</div>
+
+<div class="container11">
+<img src="../images/boutique/sac-removebg-preview.png" alt="Description de l'image">
+<div class="content">
+<h1>Le sac sportif qui allie style et praticité </h1>
+<button>commander</button>
+</div>
+</div>
+
+<div class="conteneur" style="background-color: #f5e5e5;"      >
+        <figure>
+            <i class="fas fa-quote-left quote-icon"></i>
+            <figcaption>Les vêtements de sport sont corrects</figcaption>
+            <p>ils sont très confortables et stylés</p>
+            <div class="etoiles">
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9734;</a>
+            </div>
+            <img src="../images/boutique/fille2.jpeg" style="border-radius: 50%;" width="70px" margin-top:20px >
+            <h5>Alexendra hoyta</h5>
+        </figure>
+        <figure>
+            <i class="fas fa-quote-left quote-icon"></i>
+            <figcaption>ils sont très confortables et stylés</figcaption>
+            <p>Les vêtements de sport sont corrects</p>
+            <div class="etoiles">
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9733;</a>
+                <a href="#" class="etoile">&#9734;</a>
+                <a href="#" class="etoile">&#9734;</a>
+            </div>
+            <img src="../images/boutique/g.jpg" style="border-radius: 50%;" width="70px" margin-top:20px >
+            <h5>selin gokew</h5>
+        </figure>
+    </div>
+    
+        <footer>
+            <div class="row">
+                <div class="col part1">
+                    <div class="logo">
+                  
+                        <img src="../images/logo/2564084.png" alt="Votre Logo" width="150px" height="auto">
+                    </div>
+                   
+                    <div class="social-icons">
+                      <img class="social-icon" src="../images/icons/réseaux sociaux/facebook.png" width="35px">
+                      <img class="social-icon" src="../images/icons/réseaux sociaux/whatsapp.png" width="40px">
+                      <img class="social-icon" src="../images/icons/réseaux sociaux/instagram-icon.png" width="45px">
+                      <img class="social-icon" src="../images/icons/réseaux sociaux/twitter.png" width="30px">
+                      <img class="social-icon" src="../images/icons/réseaux sociaux/youtube.png" width="35px">
+                  </div>
+                </div>
+            </div>
+            <div class="row part2">
+                <div class="col">
+                    <h2 class="title"> fitness guid</h2>
+                    <p class="para">Le client lui-même est une grande élite <br>consecteur adipisicing. La vie, ne te <br>méprends pas sur le plaisir du corps,</p>
+                </div>
+                <div class="col">
+                    <h2> Quelques liens</h2>
+                    <a href="">F.A.Q</a><br>
+                    <a href="">Politique de cookies</a><br>
+                    <a href="">Conditions d'utilisation</a><br>
+                    <a href="">Soutien</a>
+                </div>
+                <div class="col contact">
+                    <form>
+                        <h2>Contactez-nous</h2>
+                        <input type="email" placeholder="Email"><br>
+                        <textarea rows="3" cols="23" >Votre message</textarea><br>
+                        <button type="submit">Envoyez</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row part3">
+                <div class="col">
+                    <h5>copyright @2023 <a href="">Fitness Guide</a></h5>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
+

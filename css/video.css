@@ -1,0 +1,52 @@
+.row{
+    width: 90%;
+    margin-left: 5%;
+}
+.col{
+    padding: 10px;
+}
+.jour{
+    display: flex;
+    box-shadow: 0px 0px 10px #5a7eee;
+    border-radius: 10px;
+}
+.jour iframe{
+    border-radius: 10px 0 0 10px;
+}
+.jour .description{
+    padding: 20px;
+}
+.jour p{
+    color: #5a7eee;
+}
+.jour .like{
+    display: flex;
+}
+.jour .like a{
+    margin: 0 20px 0 20px;
+}
+.jour .like a:hover{
+    transform: scale(1.1);
+}
+.jour .like a:hover::after{
+    width: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .jour iframe{
+        width: 200px;
+        height: 112.5px;
+    }
+    .jour .description{
+        padding: 0 5px 0 5px;
+    }
+    .jour h3{
+        font-size: 20px;
+    }
+    .jour p{
+        font-size: 18px;
+    }
+    .jour .like img{
+        width: 20px;
+    }
+}

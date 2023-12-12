@@ -1,0 +1,316 @@
+body{
+    margin: 0;
+    font-size: 23px;
+    font-family:'Myriad Pro','Berlin Sans FB','Century Schoolbook';
+    background-color: #F8F8F8;
+}
+header{
+    font-size: 23px;
+    font-family:'Myriad Pro','Berlin Sans FB','Century Schoolbook';
+    width: 100%;
+    min-height: 100vh;
+    background:url('../images/logo/background.png') no-repeat;
+    background-size: 100%;
+}
+.carousel{
+    margin-top: 50px;
+}
+header h1{
+    text-align-last: right;
+    position: absolute;
+    bottom: 40%;
+    right: 8%;
+    color: #844ca7;
+    text-shadow: 2px 2px 8px;
+    font-size: 45px;
+    transition: .3s;
+}
+header pre{
+    color: white;
+    text-shadow: 2px 2px 8px #844ca7;
+    padding-top: 8px;
+}
+header .w-400{
+    width:400px;
+    transition: .3s;
+    margin: 0px 0 0 100px;
+}
+header .w-450{
+    width: 450px;
+    margin: 30px 0 0 180px;
+    transition: .3s;
+}
+header .w-580{
+    width: 580px;
+    margin: 50px 0 0 150px;
+    transition: .3s;
+}
+
+#services{
+ padding: 0 5%;
+ margin-top: -10px;
+ text-align: center;
+}
+.presentation{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+#services h1{
+    font-family: 'Berlin Sans FB';
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #5a7eee;
+}
+#services h3{
+    font-family: 'Berlin Sans FB';
+    margin-top: 20px;
+}
+#services p{
+    font-family: 'Myriad Pro';
+    font-size: 25px;
+}
+#services .col{
+    width: 250px;
+}
+#services .card{
+    margin-top: 20px;
+    transition: .3s;
+}
+#services .card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#services a{
+    color: black;
+    transition: .3s;
+}
+#services a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #5a7eee;
+    transition: O.3s;
+}
+
+#blog h1{
+    color: #844CA7;
+    text-align: center;
+}
+#blog .card-body p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    #services{
+        margin-top: -150px;
+    }
+    #services .row{
+        width: 70%;
+        margin: 0 15%;
+    }
+    header{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 40% auto ;
+        transition: .3s;
+    }
+    header h1{
+        right: 10%;
+        font-size: 40px;
+        transition: .3s;
+        top: 20%;
+    }
+    header .w-400{
+        width:300px;
+        transition: .3s;
+        margin: 20px 0 0 100px;
+    }
+    header .w-450{
+        width: 300px;
+        margin: 30px 0 0 120px;
+        transition: .3s;
+    }
+    header .w-580{
+        width: 450px;
+        margin: 30px 0 0 100px;
+        transition: .3s;
+    }
+}
+@media screen and (max-width: 950px) {
+    #services{
+        margin-top: -250px;
+    }
+    #services .row{
+        width: 90%;
+        margin: 0 5%;
+    }
+    #services h1{
+        font-size: 30px;
+    }
+    #services p{
+        font-size: 20px;
+    }
+    #services h3{
+        font-size: 25px;
+    }
+    header .first{
+        display: none;
+    }
+    header h1{
+        right: 10%;
+        font-size: 28px;
+        transition: .3s;
+        top: 20%;
+    }
+    header .w-400{
+        width:220px;
+        transition: .3s;
+        margin: 0px 0 0 100px;
+    }
+    header .w-450{
+        width: 250px;
+        margin: 0px 0 0 120px;
+        transition: .3s;
+    }
+    header .w-580{
+        width: 300px;
+        margin: 0px 0 0 100px;
+        transition: .3s;
+    }
+}
+@media screen and (max-width: 600px) {
+    #services{
+        margin-top: -420px;
+    }
+    #services h1{
+        font-size: 20px;
+    }
+    #services p{
+        font-size: 15px;
+    }
+    #services h3{
+        font-size: 18px;
+    }
+    #services .row{
+        width: 100%;
+        margin: 0 5%;
+    }
+    #services .card{
+        width: 180px;
+    }
+    #services .col{
+        width: 180px;
+    }
+    header .first{
+        display: none;
+    }
+    header h1{
+        right: 5%;
+        font-size: 15px;
+        transition: .3s;
+        top: 20%;
+    }
+    
+    .carousel{
+        margin-top: 20px;
+    }
+
+    header .w-400{
+        width:120px;
+        transition: .3s;
+        margin: 0px 0 0 30px;
+    }
+    header .w-450{
+        width: 150px;
+        margin: 0px 0 0 20px;
+        transition: .3s;
+    }
+    header .w-580{
+        width: 180px;
+        margin: 0px 0 0 10px;
+        transition: .3s;
+    }
+    .presentation{
+        margin-top: 40px;
+    }
+}
+.about{
+    width: 100%;
+    background-color:#D9D9D9;
+    display: flex;
+    margin: 40px 0;
+}
+.about .left{
+    height: 900px;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+.about .left:hover{
+    filter: grayscale(0);
+    transform: scale(1.1) ;
+}
+.about .container{
+    height: 560px;
+    border-radius: 5%;
+    background-color: #844ca7;
+    margin: 150px 0px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 30px;
+}
+.about .container h1{
+    color: white;
+    text-transform: uppercase;
+}
+.about .container h3{
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.about .container p{
+    color: white;
+    text-transform: unset;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.about .container img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.about .latifa{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+@media screen and (max-width:700px){
+    .about .left{
+        height: 400px;
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+    .about .container{
+        height: 300px;
+        margin: 50px 0px;
+        margin-right: 10px;
+        padding: 30px;
+        overflow: auto;
+    }
+    .about .container h1{
+        font-size: 20px;
+    }
+    .about .container h3{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .about .container p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .about .container img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .about .latifa{
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+}
